@@ -9,9 +9,7 @@ import (
 func main() {
 	fmt.Println()
 
-	/*
-	   SOAL 1
-	*/
+	// soal 1
 	a := "Bootcamp"
 	b := "Digital"
 	c := "Skill"
@@ -19,15 +17,11 @@ func main() {
 	e := "Golang"
 	fmt.Printf("%s %s %s %s %s \n", a, b, c, d, e)
 
-	/*
-	   SOAL 2
-	*/
+	// soal 2
 	halo := "Halo Dunia"
 	fmt.Println(strings.ReplaceAll(halo, "Dunia", "GOLANG"))
 
-	/*
-	   SOAL 3
-	*/
+	// soal 3
 	var kataPertama = "saya"
 	var kataKedua = "senang"
 	var kataKetiga = "belajar"
@@ -38,9 +32,7 @@ func main() {
 	kataKeempat = strings.ToUpper(kataKeempat)
 	fmt.Printf("%s %s %s %s \n", kataPertama, kataKedua, kataKetiga, kataKeempat)
 
-	/*
-	   SOAL 4
-	*/
+	// soal 4
 	var angkaPertama = "8"
 	var angkaKedua = "5"
 	var angkaKetiga = "6"
@@ -51,9 +43,7 @@ func main() {
 	keempat, _ := strconv.ParseInt(angkaKeempat, 10, 64)
 	fmt.Println(pertama + kedua + ketiga + keempat)
 
-	/*
-	   SOAL 5
-	*/
+	// ssoal 5
 	kalimat := "halo halo bandung"
 	angka := 2021
 	kalimat = strings.ReplaceAll(kalimat, "halo", "HI")
