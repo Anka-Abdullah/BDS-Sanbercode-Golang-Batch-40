@@ -6,9 +6,6 @@ import (
 	"strings"
 )
 
-// kalimat := "halo halo bandung"
-// angka := 2021
-
 func main() {
 	fmt.Println()
 
