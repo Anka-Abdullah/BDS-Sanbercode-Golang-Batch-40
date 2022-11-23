@@ -1,0 +1,9 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Anka Abdullah
+2. Email: ankaabdullah.id@gmail.com
+3. Sistem Operasi yang digunakan: ubuntu 22.04 - linux
+4. Akun Gitlab/Github: @ankaabdullah.id 
+5. Akun Telegram: @anka
+6. Status (Bekerja/Mahasiswa): Bekerja
+7. Pernah menggunakan Go: pernah hanya untuk belajar
+8. Bahasa Pemrograman yg pernah dipelajari: javascript, python, php, Go, typescript
