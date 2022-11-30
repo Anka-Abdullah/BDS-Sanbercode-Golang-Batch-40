@@ -61,16 +61,20 @@ func main() {
 			"genre":    genre,
 			"year":     year,
 		})
-		len := len(dataFilm)
-		str := fmt.Sprintf("%d.", len)
-		for k, v := range dataFilm[len-1] {
-			fmt.Printf("%s %s : %s\n", str, k, v)
-			str = "  "
-		}
-		fmt.Println()
 	}
 	tambahDataFilm("LOTR", "2 jam", "action", "1999", &dataFilm)
 	tambahDataFilm("avenger", "2 jam", "action", "2019", &dataFilm)
 	tambahDataFilm("spiderman", "2 jam", "action", "2004", &dataFilm)
 	tambahDataFilm("juon", "2 jam", "horror", "2004", &dataFilm)
+
+	count := 1
+	for _, v := range dataFilm {
+		str := fmt.Sprintf("%d.", count)
+		for x, y := range v {
+			fmt.Println(str, x, ":", y)
+			str = "  "
+		}
+		count += 1
+		fmt.Println()
+	}
 }
