@@ -57,8 +57,8 @@ func main() {
 	var hitungBangunRuang hitungBangunRuang
 
 	hitungBangunRuang = tabung{5.0, 10}
-	// fmt.Println("volume tabung :", hitungBangunRuang.volume())
-	// fmt.Println("luas permukaan tabung :", hitungBangunRuang.luasPermukaan())
+	fmt.Println("volume tabung :", hitungBangunRuang.volume())
+	fmt.Println("luas permukaan tabung :", hitungBangunRuang.luasPermukaan())
 
 	hitungBangunRuang = balok{10, 8, 5}
 	fmt.Println("volume balok :", hitungBangunRuang.volume())
