@@ -18,15 +18,15 @@ func main() {
 	fmt.Println(kelilingSegitigaSamaSisi(0, true))
 
 	// soal 3
-	defer cetakAngka(&angka)
+	// defer cetakAngka(&angka)
 
-	tambahAngka(7, &angka)
+	// tambahAngka(7, &angka)
 
-	tambahAngka(6, &angka)
+	// tambahAngka(6, &angka)
 
-	tambahAngka(-1, &angka)
+	// tambahAngka(-1, &angka)
 
-	tambahAngka(9, &angka)
+	// tambahAngka(9, &angka)
 
 }
 
