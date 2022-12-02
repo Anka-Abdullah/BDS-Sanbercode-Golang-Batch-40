@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	angka := 1
+	// angka := 1
 	// soal 1
 	defer tryDefer("Golang Backend Development", 2022)
 
