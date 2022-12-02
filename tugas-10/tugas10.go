@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"time"
 )
 
 func main() {
-	// angka := 1
+	angka := 1
 	// soal 1
 	defer tryDefer("Golang Backend Development", 2022)
 
@@ -16,22 +17,34 @@ func main() {
 	fmt.Println(kelilingSegitigaSamaSisi(4, true))
 	fmt.Println(kelilingSegitigaSamaSisi(8, false))
 	fmt.Println(kelilingSegitigaSamaSisi(0, true))
+	time.Sleep(time.Second)
 
 	// soal 3
-	// defer cetakAngka(&angka)
+	defer cetakAngka(&angka)
+	tambahAngka := func(x int, y *int) {
+		angka = x + *y
+	}
+	tambahAngka(7, &angka)
+	tambahAngka(6, &angka)
+	tambahAngka(-1, &angka)
+	tambahAngka(9, &angka)
 
-	// tambahAngka(7, &angka)
+	// soal 4
+	fmt.Println("\nsoal 4")
 
-	// tambahAngka(6, &angka)
+	var phones = []string{}
+	phones = append(phones, "Xiaomi", "Asus", "IPhone", "Samsung", "Oppo", "Realme", "Vivo")
 
-	// tambahAngka(-1, &angka)
-
-	// tambahAngka(9, &angka)
-
+	for i, v := range phones {
+		time.Sleep(time.Second)
+		fmt.Printf("%d. %s\n", i+1, v)
+	}
 }
 
 func tryDefer(kalimat string, tahun int) {
+	time.Sleep(time.Second)
 	fmt.Println("\nsoal 1 \n", kalimat, tahun)
+	fmt.Println()
 }
 
 func kelilingSegitigaSamaSisi(num int, bo bool) string {
@@ -53,4 +66,9 @@ func kelilingSegitigaSamaSisi(num int, bo bool) string {
 		result = strconv.Itoa(num)
 	}
 	return result
+}
+
+func cetakAngka(numb *int) {
+	time.Sleep(time.Second)
+	fmt.Println("\nsoal 3\n", *numb)
 }
